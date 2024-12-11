@@ -12,15 +12,17 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <!-- صحنه AR -->
-        <a-entity position="0 0 -3">
-            <a-sphere color="red" radius="0.1"></a-sphere>
-            <a-image 
-              src="https://via.placeholder.com/300x300.png?text=Photo" 
-              position="0 1 0" 
-              width="1.5" 
-              height="1.5">
-            </a-image>
-          </a-entity>
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+          <a-image 
+            src="https://via.placeholder.com/300x300.png?text=Photo" 
+            position="0 0 0" 
+            width="1.5" 
+            height="1.5">
+          </a-image>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
   </body>
 </html>
    
